@@ -49,3 +49,5 @@ $user = $stmt->fetch();
 
 // Close the database connection
 $pdo = null;
+
+?>
