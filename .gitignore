@@ -1,0 +1,5 @@
+config.php
+*.log
+*.sql
+
+*.ps1
