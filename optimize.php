@@ -52,7 +52,8 @@ class DatabaseOptimizer {
     private function connect() {
         try {
             $db = $this->config['database'];
-            $dsn = "mysql:host={$db['host']};dbname={$db['dbname']};charset={$db['charset']}";
+            $port = isset($db['port']) ? $db['port'] : 3306;
+            $dsn = "mysql:host={$db['host']};port={$port};dbname={$db['dbname']};charset={$db['charset']}";
             $this->pdo = new PDO($dsn, $db['username'], $db['password'], $this->config['options']);
         } catch (PDOException $e) {
             die("Database connection failed: " . $e->getMessage() . "\n");
