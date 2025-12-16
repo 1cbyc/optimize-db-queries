@@ -2,6 +2,8 @@
 
 A comprehensive tool for analyzing, profiling, and optimizing database queries with real performance measurements and actionable recommendations.
 
+> 📖 **New:** See [DOCUMENTATION.md](DOCUMENTATION.md) for real-world scenarios and workflows.
+
 ## Features
 
 - **Query Profiling**: Measure actual execution time with multiple iterations
